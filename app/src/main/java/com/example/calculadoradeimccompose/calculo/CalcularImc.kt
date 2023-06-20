@@ -17,10 +17,8 @@ class CalcularImc {
 
         if (imc <= 18.5) {
             resultado = "Peso Baixo \n IMC: ${decimalFormat.format(imc)}"
-
         } else if (imc <= 24.9) {
             resultado = "Peso Normal \n IMC: ${decimalFormat.format(imc)}"
-
         } else if (imc <= 29.9) {
             resultado = "Sobrepeso \n IMC: ${decimalFormat.format(imc)}"
         } else if (imc <= 34.9) {
@@ -33,7 +31,7 @@ class CalcularImc {
         resultadoImc = resultado
     }
 
-    fun resultadoImc(): String{
+    fun resultadoImc(): String {
         return resultadoImc
     }
 }

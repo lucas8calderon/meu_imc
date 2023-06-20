@@ -44,7 +44,6 @@ class MainActivity : ComponentActivity() {
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun CalculadoraImc() {
-
     val context = LocalContext.current
     val calcularImc = CalcularImc()
 
@@ -123,7 +122,6 @@ fun CalculadoraImc() {
                     keyboardType = KeyboardType.Number
                 )
             )
-
             OutlinedTextField(
                 value = altura,
                 onValueChange = {
@@ -148,7 +146,6 @@ fun CalculadoraImc() {
                     keyboardType = KeyboardType.Number
                 )
             )
-
             Button(
                 onClick = {
                     if (peso.isEmpty() || altura.isEmpty()) {
@@ -168,14 +165,12 @@ fun CalculadoraImc() {
                     contentColor = WHITE
                 )
             ) {
-
                 Text(
                     text = "Calcular IMC",
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold
                 )
             }
-
             Text(
                 text = textoResultado,
                 fontSize = 18.sp,
@@ -183,10 +178,8 @@ fun CalculadoraImc() {
                 fontWeight = FontWeight.Bold
             )
         }
-
     }
 }
-
 
 @Preview(showBackground = true)
 @Composable
